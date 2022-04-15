@@ -76,15 +76,23 @@ class DogTest {
         tester1.setName("J-bob");
         assertTrue(tester1.getName().matches("[A-Z]+[-]+[a-z]*"));
     }
-/*
+
     @Test
     void FNLWithHyphenTrue2()
     {
         Dog tester1 = new Dog();
-        tester1.setName("John-bob");
-        assertTrue(tester1.getName().matches("[A-Z]+([-][a-z])*"));
+        tester1.setName("Jon-Bob");
+        assertTrue(tester1.getName().matches("([A-Za-z])*+[-]([A-Za-z])*"));
+    }//[a-z]+([-][A-Za-z])*
+
+    @Test
+    void breedNamesWithShepherd()
+    {
+        Dog tester1 = new Dog();
+        tester1.setBreed("German Shepherd");
+        assertTrue(tester1.getBreed().matches("[A-Za-z]*+[:blank:]"));
     }
-*/
+
     //LAST TEST NOT WORKING
     @Test
     void getFirstName() {

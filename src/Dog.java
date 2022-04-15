@@ -16,15 +16,47 @@ public class Dog
         isChipped = false;
     }//end of public default constructor
 
+    //Getters
     public String getName()
     {
         return name;
-    }//firstName getter
+    }//name getter
 
+    public String getBreed()
+    {
+        return breed;
+    }//breed getter
+
+    public int getAge()
+    {
+        return age;
+    }//age getter
+
+    public boolean getIsChipped()
+    {
+        return isChipped;
+    }//isChipped getter
+
+    //Setters
     public void setName(String name)
     {
         this.name = name;
-    }//firstName setter
+    }//name setter
+
+    public void setBreed(String breed)
+    {
+        this.breed = breed;
+    }//name setter
+
+    public void setAge(int age)
+    {
+        this.age = age;
+    }//name setter
+
+    public void setChipped(boolean isChipped)
+    {
+        this.isChipped = isChipped;
+    }//name setter
 
     private String validateName(String name)
     {

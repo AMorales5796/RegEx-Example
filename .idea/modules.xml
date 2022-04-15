@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IntroToRegEx.iml" filepath="$PROJECT_DIR$/IntroToRegEx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroToRegExAssignment.iml" filepath="$PROJECT_DIR$/IntroToRegExAssignment.iml" />
     </modules>
   </component>
 </project>
