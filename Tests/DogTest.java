@@ -90,7 +90,7 @@ class DogTest {
     {
         Dog tester1 = new Dog();
         tester1.setBreed("German Shepherd");
-        assertTrue(tester1.getBreed().matches("[A-Za-z]*+[:blank:]"));
+        assertTrue(tester1.getBreed().matches("([A-Za-z])*+[ ]([A-Za-z])*"));
     }
 
     //LAST TEST NOT WORKING
