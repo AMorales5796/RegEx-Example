@@ -30,6 +30,22 @@ class DogTest {
     }
 
     @Test
+    void FirstNamewithNumberFalse()
+    {
+        Dog tester1 = new Dog();
+        tester1.setName("Kib");
+        assertFalse(tester1.getName().matches("[0-9]"));
+    }
+
+    @Test
+    void FirstNameWithNumberTrue()
+    {
+        Dog tester1 = new Dog();
+        tester1.setName("K9");
+        assertTrue(tester1.getName().matches("[9]$"));
+    }
+
+    @Test
     void FNLetterbFalse()
     {
         Dog tester1 = new Dog();
@@ -86,11 +102,11 @@ class DogTest {
     }//[a-z]+([-][A-Za-z])*
 
     @Test
-    void breedNamesWithShepherd()
+    void breedNamesWithSpace()
     {
         Dog tester1 = new Dog();
         tester1.setBreed("German Shepherd");
-        assertTrue(tester1.getBreed().matches("([A-Za-z])*+[ ]([A-Za-z])*"));
+        assertTrue(tester1.getBreed().matches("([A-Za-z])*+[ ]([A-Za-z])*")); //<--- uses character class (space is used)
     }
 
     //LAST TEST NOT WORKING

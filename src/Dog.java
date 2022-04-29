@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Dog
 {
     Scanner input = new Scanner(System.in);
-    private String name;
-    private String breed;
-    private int age;
-    private boolean isChipped;
+    public String name;
+    public String breed;
+    public int age;
+    public boolean isChipped;
 
     public Dog()
     {
@@ -58,14 +58,14 @@ public class Dog
         this.isChipped = isChipped;
     }//name setter
 
-    private String validateName(String name)
+    public String validateName(String name)
     {
         while(!name.matches("[A-Z][a-zA-Z]*"))
         {
             System.out.println("Format Incorrect");
             name = input.nextLine();
         }
-            return name;
+            return "Your dog's name is: " + name;
     }
 
     @Override
