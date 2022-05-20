@@ -16,6 +16,14 @@ public class Dog
         isChipped = false;
     }//end of public default constructor
 
+    public Dog(String name, String breed, int age, boolean isChipped)
+    {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.isChipped = isChipped;
+    }//end of public default constructor
+
     //Getters
     public String getName()
     {
@@ -60,12 +68,19 @@ public class Dog
 
     public String validateName(String name)
     {
-        while(!name.matches("[A-Z][a-zA-Z]*"))
+        String output = "";
+        if(!name.matches("[A-Z][a-zA-Z]*"))
         {
-            System.out.println("Format Incorrect");
+            System.out.println("Format Incorrect. Please try again:");
             name = input.nextLine();
         }
-            return "Your dog's name is: " + name;
+        else
+        {
+            System.out.println("Format Incorrect");
+        }
+        output = "Your dog's name is: " + name;
+        System.out.println(output);
+        return output;
     }
 
     @Override
